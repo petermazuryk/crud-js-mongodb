@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.container{
+  display: block;
+  width: 1120px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.add_note{
+  margin-bottom: 20px;
+}
+
+#pagination {
+	display: flex;
+	padding: 0;
+	list-style-type: none;
+}
+#pagination li {
+	margin-right: 5px;
+	padding: 10px;
+	border: 1px solid black;
+}
+#pagination li:hover, #pagination li.active {
+	cursor: pointer;
+	color: red;
+	border: 1px solid red;
+}
+
+.modal-container {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 10%;
+  left:35%;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  border-radius: .8rem;
+  z-index: 10;
+  background: hsla(0, 0%, 40%, .8);
+  overflow: hidden;
+}
+
+.modal__details {
+  text-align: center;
+  border-bottom: 1px solid hsla(0, 0%, 100%, .4);
+}
+.modal__title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.modal__text {
+  display: inline-block;
+  padding-bottom: 12px;
+  margin-bottom: 4rem;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.submit_layout{
+  display: flex;
+  padding-top: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+}

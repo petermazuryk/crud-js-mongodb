@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./index.css">
+  <title>Notes</title>
+</head>
+
+<body>
+  <!-- end -->
+  <main class="container">
+    <a class=" add_note waves-effect waves-light btn modal-trigger" href="#">Add note</a>
+    <ul class="collection hide-on-med-and-down" id="list"></ul>
+    <div id="pagination"></div>
+    <!-- Modal Trigger -->
+
+  </main>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal-container" hidden>
+    <form class="notes-form" id="js-form">
+      <input class="notes-title input-field col s6" type="text" name="title" placeholder="Add title">
+      <input class="notes-text input-field col s6" type="text" name="note" placeholder="Add notes"
+        class="js-todo-input">
+      <!-- <input type="file" class="notes-file " name="file" placeholder="Add IMG" accept=".jpg, .jpeg, .png">
+        <label for="file">Choose file to upload </label>
+      </div> -->
+      <div class="submit_layout">
+        <button id="btn-close" class="btn waves-effect waves-light light-green accent-4 " type="submit"
+          name="action">Submit
+        </button>
+    </form>
+    <a href="#!" class="btn deep-purple modal-close">Close</a>
+  </div>
+
+  <!-- rest of the code -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+
+</html>
